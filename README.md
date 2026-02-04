@@ -36,6 +36,7 @@ This project was developed as part of a task to illustrate key system design con
 The service is structured to emphasize separation of concerns:
 
 Task3/
+
 ├── core/ # Core logic and system state management
 
 ├── http/ # HTTP API and observability endpoints
