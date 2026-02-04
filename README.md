@@ -6,7 +6,7 @@ This project models how production-grade systems behave under normal operation, 
 
 ---
 
-## 🧠 Objective
+##  Objective
 
 This project was developed as part of a task to illustrate key system design concepts:
 
@@ -21,30 +21,33 @@ This project was developed as part of a task to illustrate key system design con
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🚦 Controlled system lifecycle states  
-- 🔁 State transition validation  
-- 🛠️ Graceful shutdown support  
-- 📊 Observability via HTTP endpoints  
-- 💥 Fault injection support  
+-  Controlled system lifecycle states  
+-  State transition validation  
+-  Graceful shutdown support  
+-  Observability via HTTP endpoints  
+-  Fault injection support  
 
 ---
 
-## 🧩 Architecture
+##  Architecture
 
 The service is structured to emphasize separation of concerns:
 
 Task3/
 ├── core/ # Core logic and system state management
+
 ├── http/ # HTTP API and observability endpoints
+
 ├── signals/ # OS signal handling
+
 └── main.go # Program entry point
 
 
 ---
 
-## 💻 Requirements
+##  Requirements
 
 Make sure you have the following installed:
 
@@ -53,7 +56,7 @@ Make sure you have the following installed:
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 1. Clone the repository
 
@@ -84,7 +87,7 @@ Ends in stopped once all operations are safely terminated
 
 Invalid transitions are blocked to maintain system safety and clarity.
 
-📌 What I Learned
+ What I Learned
 How to design a system with explicit state ownership
 
 Importance of graceful shutdown handling
